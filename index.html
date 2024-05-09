@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tai xiu</title>
+        <title>About me and my luv</title>
+        <style>
+            .customAlert{
+                font-size: 50px;
+                background-color: cyan;
+                color: blue;
+                border: 4px dotted hotpink;
+            }
+            .background{
+                background-color: aqua;
+            }
+        </style>
+        
     </head>
-    <body style="background-color:pink"><b>
+    <body style="background-color: pink;"><b>
         <fieldset><dl>
             <dt>Quang:</dt>
                 <dd>Dep trai tai gioi</dd>
@@ -22,32 +34,32 @@
         </fieldset>
         
         <fieldset>
-            <legend style="font-size: 30px; font-style: italic; text-decoration: underline;"><b>Form danh gia doi phuong</b></legend>
-            
+            <legend style="font-size: 30px; font-style: italic; text-decoration: underline;"><b>Form danh gia 2 nguoi:</b></legend>
+            <p><label><span class="background">you don't need to answer at all the question</span></label></p>
             <table>
-                <label><b>For Ha`</b></label>
+                <label><b>About Ha`</b></label>
                 <tr>
-                    <td style="font-style: italic; text-decoration: underline;"">How do u think about my appearance:</td>
+                    <td style="font-style: italic; text-decoration: underline;"">How do u think about Ha's appearance:</td>
                     <td>
                         <th>
                             <select>
                                 <option value="choose1">choose 1</option>
-                                <option value="handsome">handsome</option>
-                                <option value="superhs">super handsome</option>
-                                <option value="insane">INSANE HANDSOME!!!</option>
+                                <option value="handsome">Beautiful</option>
+                                <option value="superhs">Super Beautiful</option>
+                                <option value="insane">INSANE Beautiful!!!</option>
                             </select>
                         </th>  
                     </td>
                                    
                 </tr>
                 <tr>
-                    <td style="font-style: italic; text-decoration: underline;">Do u luv me?:</td>
+                    <td style="font-style: italic; text-decoration: underline;">Do u like me?:</td>
                     <td>
                         <th>
                         <ol type>
                             <li>Yes</li>
                             <li>Fkin yes</li>
-                            <li>Why not? Im super insane luv u</li>
+                            <li>Why not? Im super insane like u</li>
                         </ol>
                         </th> 
                     </td><br> 
@@ -60,24 +72,26 @@
                         <th><textarea name="textarea" id="txtarea"></textarea></th>
                     </td>
                 </tr>
-                <tr>
-                    <td style="font-style: italic; text-decoration: underline;">The day we luv:</td>
-                    <td>
-                        <th>
-                            <input type="date" name="importantday">
-                        </th>
-                    </td>
-                </tr>
             </table>
             <table>
                 <tr>
-                    <legend><b>For Quang:</b></legend>
-                    <td style="font-style: italic;">How do u feel about Ha`:</td>
+                    <legend><b>about Quang:</b></legend>
+                    <td style="font-style: italic;">How do u feel about Quang:</td>
                     <td>
                         <th><textarea name="textarea" cols="30" rows="1"></textarea></th>
                     </td>
                 </tr>
             </table>
+            <input type="submit" name="submit"id="submit" value="Submit" onclick="addCss()">
+            <input type="reset" name="reset" value="Reset">
         </fieldset>
     </body>
+    <script>
+        function addCss(){
+            var a = document.createElement("div");
+            a.innerHTML = "Done! Thanks for your time!!!";
+            a.className = "customAlert";
+            document.body.appendChild(a);
+        }
+    </script>
 </html>
